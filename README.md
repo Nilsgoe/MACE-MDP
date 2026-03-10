@@ -1,29 +1,87 @@
-## MACE-MDP: Dipole and Polarizability Model(s) for Organic Systems
+# MACE-MDP: Dipole and Polarizability Models for Organic Systems
 
-### License
+[**MACE-MDP**](https://chemrxiv.org/doi/full/10.26434/chemrxiv.15000716/v1) is a machine-learning model for predicting **molecular dipole moments** and **fully anisotropic polarizability tensors** for organic systems. The model is based on an **E(3)-equivariant message-passing neural network architecture (MACE)** and is trained on the **SPICE-α dataset**.
 
-The **MACE-MDP** project is licensed under the **ASL License** — see the `LICENSE` file for details.
+MACE-MDP enables efficient prediction of dielectric response properties that are central to **infrared (IR) and Raman spectroscopy**, electrostatics, and molecular response to external electric fields. When combined with **machine-learning interatomic potentials (MLIPs)**, the model allows **rapid, first-principles–accurate vibrational spectroscopy calculations** across molecules, clusters, and condensed-phase systems.
 
-### Copyright
+MACE-MDP provides trained MACE models and ready-to-run tutorials for:
 
-**MACE-MDP** is © 2025, **Nils Gönnheimer**.
-
-MACE-MDP is published and distributed under the **Academic Software License v1.0 (ASL)**.
-
-MACE-MDP is distributed in the hope that it will be useful for **non-commercial academic research**, but **WITHOUT ANY WARRANTY**; without even the implied warranty of **MERCHANTABILITY** or **FITNESS FOR A PARTICULAR PURPOSE**. See the **ASL license** for more details.
-
-You should have received a copy of the **ASL** along with this program; if not, write to **[@gmail.com](mailto:@gmail.com)**.
-It is also available at the official license repository.
-
-You may contact the original licensor at **[@gmail.com](mailto:@gmail.com)**.
+- IR spectra
+- Raman spectra
+- Dipole and polarizability prediction
 
 ---
 
-## Contents
+## What you need to use MACE-MDP
 
-| Directory                       | Description                                                                                                               |
-| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| `models/`                       | Directory containing the **MACE-MDP trained model(s)** for predicting molecular dipole moments and polarizability tensors |
-| `examples/`                      | Directory containing **example Python scripts for inference** using the MACE-MDP model                                    |                                           |
+This repository already contains everything required for inference and tutorial use:
+
+- model file: `models/MACE-MDP.model`
+- tutorials and scripts: `examples/`
+- example structure set: `examples/mini_database_IR-R-7193_wB97MD3.xyz`
 
 ---
+
+## Installation
+
+Install **MACE** and its dependencies using either **conda** or **pip**.
+
+### Option 1: Conda (recommended)
+
+```bash
+conda create -n mace-mdp python=3.11 -y
+conda activate mace-mdp
+pip install --upgrade pip
+pip install torch mace-torch matplotlib jupyterlab
+````
+
+### Option 2: Pip + venv
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
+pip install torch mace-torch matplotlib jupyterlab
+```
+
+---
+
+## Tutorials
+
+The repository includes example notebooks demonstrating how to use MACE-MDP:
+
+* `examples/IR/IR_tutorial.ipynb`
+* `examples/Raman/Raman_tutorial.ipynb`
+* `examples/Dipole_Polarizability/Dipoles_Polarizability_tutorial.ipynb`
+
+These tutorials are configured to use:
+
+* XYZ file: `examples/mini_database_IR-R-7193_wB97MD3.xyz`
+* model path: `models/MACE-MDP.model`
+
+---
+
+## Repository layout
+
+* `models/` – trained MACE-MDP model(s)
+* `examples/` – notebooks, scripts, and example inputs
+
+---
+
+## Citation
+
+If you use MACE-MDP in your research, please cite:
+
+Gönnheimer, N.; Reuter, K.; Kapil, V.; Margraf, J. T.
+**MACE-MDP: A Foundation Model for Molecular Dipole Moments and Polarizabilities.**
+ChemRxiv (2025).
+[https://chemrxiv.org/doi/full/10.26434/chemrxiv.15000716/v1](https://chemrxiv.org/doi/full/10.26434/chemrxiv.15000716/v1)
+
+---
+
+## License
+
+Copyright [MACE-MDP] is © 2025, [Nils Gönnheimer] 
+MACE-MDP is distributed under the **Academic Software License v1.0 (ASL)**.
+See `LICENSE.md` for details.
+
