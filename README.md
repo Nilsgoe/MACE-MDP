@@ -8,7 +8,7 @@ MACE-MDP provides trained MACE models and ready-to-run tutorials for:
 
 - IR spectra
 - Raman spectra
-- Dipole and polarizability prediction
+- Dipole ($e\ \text{Å}$) | Polarizability ($e\ \text{Å}^2/\text{V}$)
 
 ---
 
@@ -24,25 +24,15 @@ This repository already contains everything required for inference and tutorial 
 
 ## Installation
 
-Install **MACE** and its dependencies using either **conda** or **pip**.
-
-### Option 1: Conda (recommended)
-
-```bash
-conda create -n mace-mdp python=3.11 -y
-conda activate mace-mdp
-pip install --upgrade pip
-pip install torch mace-torch matplotlib jupyterlab
-````
-
-### Option 2: Pip + venv
+Install **MACE** and its dependencies using **pip**.
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip
-pip install torch mace-torch matplotlib jupyterlab
+pip install torch mace-torch
 ```
+Better: clone the [MACE repository](https://github.com/ACEsuit/mace) and follow the installation instructions there.
 
 ---
 
@@ -81,7 +71,9 @@ ChemRxiv (2025).
 
 ## License
 
-Copyright [MACE-MDP] is © 2025, [Nils Gönnheimer] 
+Copyright [MACE-MDP] is © 2026, [Nils Gönnheimer] 
+
 MACE-MDP is distributed under the **Academic Software License v1.0 (ASL)**.
+
 See `LICENSE.md` for details.
 
