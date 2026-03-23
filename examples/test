@@ -1,0 +1,5 @@
+python comp_dft_asp.py \
+  --root ./compred_rossi \
+  --model ../MACE_SPICE_full_mu_alpha_early_seems_great.model \
+  --device cuda \
+  --outdir aspirin_comparison

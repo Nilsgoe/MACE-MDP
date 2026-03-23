@@ -4,12 +4,13 @@ This directory contains tutorial notebooks for **MACE-MDP** spectroscopy and mol
 
 ## Tutorials
 
+
+- `Dipole_Polarizability/Dipoles_Polarizability_tutorial.ipynb`
+  - Direct MACE-MDP dipole and polarizability evaluation tutorial.
 - `IR/IR_tutorial.ipynb`
   - MACE-MDP-based harmonic IR workflow using geometry optimization, Hessian modes, and dipole derivatives.
 - `Raman/Raman_tutorial.ipynb`
   - MACE-MDP-based harmonic Raman workflow using geometry optimization, Hessian modes, and polarizability derivatives.
-- `Dipole_Polarizability/Dipoles_Polarizability_tutorial.ipynb`
-  - Direct MACE-MDP dipole and polarizability evaluation tutorial.
 
 ## Inputs and paths
 

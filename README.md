@@ -6,9 +6,10 @@ MACE-MDP enables efficient prediction of dielectric response properties that are
 
 MACE-MDP provides trained MACE models and ready-to-run tutorials for:
 
+- Dipole ($e\ \text{Å}$) | Polarizability ($e\ \text{Å}^2/\text{V}$)
 - IR spectra
 - Raman spectra
-- Dipole ($e\ \text{Å}$) | Polarizability ($e\ \text{Å}^2/\text{V}$)
+
 
 ---
 
