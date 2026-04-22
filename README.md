@@ -25,15 +25,29 @@ This repository already contains everything required for inference and tutorial 
 
 ## Installation
 
-Install **MACE** and its dependencies using **pip**.
+Install **MACE** and its dependencies using **pip**:
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install --upgrade pip
-pip install torch mace-torch
+pip install .
 ```
+
+This installs the same pinned dependencies listed in
+`reproducibility/requirements.txt`.
+
 Better: clone the [MACE repository](https://github.com/ACEsuit/mace) and follow the installation instructions there.
+
+---
+
+## Reproducibility smoke test
+
+This repository includes a small CPU inference check:
+
+```bash
+python reproducibility/run_minimal_inference.py
+```
+
+The script loads the bundled example structure and model, prints one dipole
+vector and one polarizability tensor, and writes no files.
 
 ---
 
@@ -56,6 +70,17 @@ These tutorials are configured to use:
 
 * `models/` – trained MACE-MDP model(s)
 * `examples/` – notebooks, scripts, and example inputs
+* `reproducibility/` – smoke test and environment instructions
+
+---
+
+## Code availability
+
+The code, trained model, examples, and smoke test are available in this
+repository. MACE-MDP was trained on SPICE-alpha, available at
+[https://zenodo.org/records/19205036](https://zenodo.org/records/19205036);
+that record also includes the IR-R-7193 and R-3B69 test sets. See
+`CODE_AVAILABILITY.md` and `LICENSE.md` for details.
 
 ---
 
@@ -74,7 +99,7 @@ ChemRxiv (2025).
 
 Copyright [MACE-MDP] is © 2026, [Nils Gönnheimer] 
 
-MACE-MDP is distributed under the **Academic Software License v1.0 (ASL)**.
+MACE-MDP is distributed under the **Academic Software License v1.0 (ASL)** for
+academic non-commercial use.
 
 See `LICENSE.md` for details.
-

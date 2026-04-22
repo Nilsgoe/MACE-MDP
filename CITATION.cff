@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use MACE-MDP, please cite the ChemRxiv preprint."
+title: "MACE-MDP: Dipole and Polarizability Models for Organic Systems"
+type: software
+authors:
+  - family-names: "Gonnheimer"
+    given-names: "Nils"
+  - family-names: "Reuter"
+    given-names: "Karsten"
+  - family-names: "Kapil"
+    given-names: "Venkat"
+  - family-names: "Margraf"
+    given-names: "Johannes T."
+repository-code: "https://github.com/Nilsgoe/MACE-MDP"
+url: "https://chemrxiv.org/doi/full/10.26434/chemrxiv.15000716"
+doi: "10.26434/chemrxiv.15000716"
+version: "vX.Y.Z"
+date-released: "2026-04-22"
+license: "LicenseRef-Academic-Software-License-1.0"
+abstract: "MACE-MDP provides a trained MACE model and tutorials for predicting molecular dipole moments and fully anisotropic polarizability tensors for organic systems."
+preferred-citation:
+  type: article
+  title: "MACE-MDP: A Foundation Model for Molecular Dipole Moments and Polarizabilities"
+  authors:
+    - family-names: "Gonnheimer"
+      given-names: "Nils"
+    - family-names: "Reuter"
+      given-names: "Karsten"
+    - family-names: "Kapil"
+      given-names: "Venkat"
+    - family-names: "Margraf"
+      given-names: "Johannes T."
+  year: 2025
+  doi: "10.26434/chemrxiv.15000716"
+  url: "https://chemrxiv.org/doi/full/10.26434/chemrxiv.15000716"

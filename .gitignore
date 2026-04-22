@@ -1,1 +1,23 @@
 **/.ipynb_checkpoints/
+
+# Local Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Generated notebook/tutorial outputs
+examples/**/results/
+examples/**/*.csv
+examples/**/*.png
+examples/**/*.pdf
+
+# Local editor and OS files
+.DS_Store
