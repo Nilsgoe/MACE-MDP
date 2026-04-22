@@ -25,31 +25,20 @@ This repository already contains everything required for inference and tutorial 
 
 ## Installation
 
-Install **MACE** and its dependencies using **pip**:
+Clone the repository, enter it, and install the pinned dependencies with
+**pip**:
 
 ```bash
+git clone https://github.com/Nilsgoe/MACE-MDP.git
+cd MACE-MDP
 pip install .
 ```
 
 This installs the same pinned dependencies listed in
 `reproducibility/requirements.txt`.
 
-Better: clone the [MACE repository](https://github.com/ACEsuit/mace) and follow the installation instructions there.
-
----
-
-## Reproducibility smoke test
-
-This repository includes a small CPU inference check:
-
-```bash
-python reproducibility/run_minimal_inference.py
-```
-
-The script loads the bundled example structure and model, prints one dipole
-vector and one polarizability tensor, and writes no files.
-
----
+For newer MACE versions, clone the [MACE repository](https://github.com/ACEsuit/mace)
+and follow the installation instructions there.
 
 ## Tutorials
 
@@ -71,6 +60,16 @@ These tutorials are configured to use:
 * `models/` – trained MACE-MDP model(s)
 * `examples/` – notebooks, scripts, and example inputs
 * `reproducibility/` – smoke test and environment instructions
+
+---
+
+## Reproducibility smoke test
+
+Run a minimal CPU check on the bundled example structure:
+
+```bash
+python reproducibility/run_minimal_inference.py
+```
 
 ---
 
