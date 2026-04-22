@@ -14,6 +14,11 @@ https://zenodo.org/records/19205036
 
 The same dataset record also includes the IR-R-7193 and R-3B69 test sets.
 
+Additional scripts for the paper plots and dataset-related workflows are
+available from:
+
+https://github.com/Nilsgoe/Benchmark-MACE-MDP
+
 MACE-MDP is distributed under the Academic Software License v1.0 (ASL). The ASL
 permits academic non-commercial use. Commercial use is outside the scope of the
 ASL and requires a separate commercial license from the original licensor.

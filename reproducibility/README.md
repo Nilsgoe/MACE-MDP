@@ -1,7 +1,7 @@
 # Reproducibility Smoke Test
 
 This directory contains a small CPU inference check for the bundled MACE-MDP
-model and example structure.
+model and the first bundled example structure.
 
 ## Environment setup
 
@@ -12,6 +12,7 @@ pip install .
 ```
 
 This installs the same pinned dependencies listed in `reproducibility/requirements.txt`.
+Installation usually takes a few minutes; the smoke test usually runs in a few seconds.
 
 ## Run the smoke test
 

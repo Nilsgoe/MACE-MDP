@@ -26,6 +26,15 @@ import numpy as np
 from ase.io import read
 from mace.calculators.mace import MACECalculator
 
+EXPECTED_DIPOLE = np.array([0.2389618586, -0.5556888418, 0.1477132644])
+EXPECTED_POLARIZABILITY = np.array(
+    [
+        [1.1219737137, -0.1462703541, 0.0495720720],
+        [-0.1462703541, 1.3763907132, -0.2036544210],
+        [0.0495720720, -0.2036544210, 0.6522868013],
+    ]
+)
+
 
 def main() -> int:
     repo_root = Path(__file__).resolve().parents[1]
@@ -52,13 +61,26 @@ def main() -> int:
         print("Inference produced non-finite values.", file=sys.stderr)
         return 1
 
+    np.testing.assert_allclose(dipole, EXPECTED_DIPOLE, rtol=1e-8, atol=1e-8)
+    np.testing.assert_allclose(
+        polarizability,
+        EXPECTED_POLARIZABILITY,
+        rtol=1e-8,
+        atol=1e-8,
+    )
+
     np.set_printoptions(precision=10, suppress=False)
     print("MACE-MDP smoke test")
+    print("Expected value dipole:")
+    print(EXPECTED_DIPOLE)
+    print("Expected value polarizability:")
+    print(EXPECTED_POLARIZABILITY)
     print(f"Atoms: {len(atoms)}")
-    print("Dipole:")
+    print("Computed dipole:")
     print(dipole)
-    print("Polarizability:")
+    print("Computed polarizability:")
     print(polarizability)
+    print("Assert allclose: passed")
     return 0
 
 

@@ -65,7 +65,7 @@ These tutorials are configured to use:
 
 ## Reproducibility smoke test
 
-Run a minimal CPU check on the bundled example structure:
+Run a minimal CPU check on the first bundled example structure:
 
 ```bash
 python reproducibility/run_minimal_inference.py
@@ -78,8 +78,10 @@ python reproducibility/run_minimal_inference.py
 The code, trained model, examples, and smoke test are available in this
 repository. MACE-MDP was trained on SPICE-alpha, available at
 [https://zenodo.org/records/19205036](https://zenodo.org/records/19205036);
-that record also includes the IR-R-7193 and R-3B69 test sets. See
-`CODE_AVAILABILITY.md` and `LICENSE.md` for details.
+that record also includes the IR-R-7193 and R-3B69 test sets. Additional
+scripts for the paper plots and dataset-related workflows are available at
+[https://github.com/Nilsgoe/Benchmark-MACE-MDP](https://github.com/Nilsgoe/Benchmark-MACE-MDP).
+See `CODE_AVAILABILITY.md` and `LICENSE.md` for details.
 
 ---
 
