@@ -90,8 +90,8 @@ See `CODE_AVAILABILITY.md` and `LICENSE.md` for details.
 If you use MACE-MDP in your research, please cite:
 
 Gönnheimer, N.; Reuter, K.; Kapil, V.; Margraf, J. T.
-**MACE-MDP: A Foundation Model for Molecular Dipole Moments and Polarizabilities.**
-ChemRxiv (2025).
+**MACE-MDP: A General Dipole and Polarizability Model for Organic Molecules and Materials.**
+ChemRxiv (2026).
 [https://chemrxiv.org/doi/full/10.26434/chemrxiv.15000716](https://chemrxiv.org/doi/full/10.26434/chemrxiv.15000716)
 
 ---
